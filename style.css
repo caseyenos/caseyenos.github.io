@@ -91,6 +91,16 @@ img { max-width: 100%; }
   color: var(--c5);
 }
 
+.nav-linkedin {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 6px;
+  opacity: 0.85;
+  transition: opacity var(--transition), transform var(--transition);
+}
+.nav-linkedin:hover { opacity: 1; transform: translateY(-1px); }
+
 .hamburger {
   display: none;
   flex-direction: column;
