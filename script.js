@@ -1,10 +1,9 @@
 // ── TYPEWRITER ────────────────────────────────────────────────
 const phrases = [
+  'SQL Database Developer',
+  'Database Administrator',
   'MRI Technologist',
-  'Imaging Informatics Professional',
-  'PACS Workflow Specialist',
-  'Clinical Team Leader',
-  'ARRT RT(MR) | CNMT Certified',
+  'Nuclear Medicine Technologist',
 ];
 let pi = 0, ci = 0, deleting = false;
 const tw = document.getElementById('typewriter');
