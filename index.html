@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casey Enos | MRI Technologist & Imaging Professional</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ────────────────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-brand">CE</div>
+    <ul class="nav-links">
+      <li><a href="#home"       class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#about"      class="nav-link"        data-section="about">About</a></li>
+      <li><a href="#skills"     class="nav-link"        data-section="skills">Skills</a></li>
+      <li><a href="#experience" class="nav-link"        data-section="experience">Experience</a></li>
+      <li><a href="#education"  class="nav-link"        data-section="education">Education</a></li>
+      <li><a href="#contact"    class="nav-link"        data-section="contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────────────────────────── -->
+  <section id="home" class="section hero">
+    <div class="hero-bg-circles">
+      <div class="circle c1"></div>
+      <div class="circle c2"></div>
+      <div class="circle c3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-placeholder">
+          <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="45" r="26" fill="#FFC9D7"/>
+            <ellipse cx="60" cy="105" rx="42" ry="28" fill="#FFC9D7"/>
+          </svg>
+          <span>Your Photo Here</span>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">Casey <span class="accent">Enos</span></h1>
+        <p class="hero-title">
+          <span class="typewriter" id="typewriter"></span>
+        </p>
+        <p class="hero-location">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Myrtle Beach, SC
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          <a href="#skills"  class="btn btn-outline">View Skills</a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────────────────────────────────── -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Get to know me</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo-col">
+          <div class="about-photo-placeholder">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="45" r="26" fill="#FFBCCD"/>
+              <ellipse cx="60" cy="105" rx="42" ry="28" fill="#FFBCCD"/>
+            </svg>
+            <span>Headshot Placeholder</span>
+          </div>
+          <div class="about-badges">
+            <div class="badge"><strong>7+</strong><span>Years Experience</span></div>
+            <div class="badge"><strong>2</strong><span>Certifications</span></div>
+            <div class="badge"><strong>3T</strong><span>MRI Expertise</span></div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <p>I'm a certified MRI Technologist and imaging professional with over 7 years of experience in high-volume hospital environments. My career spans clinical imaging, team leadership, PACS operations, and administrative workflow — bridging the gap between patient care and healthcare technology.</p>
+          <p>Currently at Tidelands Health, I serve as both a clinical resource and informal team lead — mentoring new technologists, optimizing departmental workflows, and managing PACS documentation to ensure diagnostic accuracy and regulatory compliance.</p>
+          <p>I hold dual certifications in MRI (<strong>ARRT RT(MR)</strong>) and Nuclear Medicine (<strong>CNMT</strong>), and I have a strong interest in imaging informatics, PACS administration, and healthcare technology roles that leverage both my clinical expertise and technical aptitude.</p>
+          <div class="about-details">
+            <div class="detail-item">
+              <span class="detail-label">Email</span>
+              <span class="detail-value">caseyenos97@gmail.com</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Phone</span>
+              <span class="detail-value">412-326-9866</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Location</span>
+              <span class="detail-value">Myrtle Beach, SC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ─────────────────────────────────────────────────────────── -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What I bring to the table</span>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card" data-delay="0">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#FC809F" stroke-width="2.5"/><ellipse cx="24" cy="24" rx="8" ry="20" stroke="#FC809F" stroke-width="2"/><line x1="4" y1="24" x2="44" y2="24" stroke="#FC809F" stroke-width="2"/><ellipse cx="24" cy="24" rx="20" ry="8" stroke="#FC809F" stroke-width="2"/></svg>
+          </div>
+          <h3>Clinical MRI</h3>
+          <ul>
+            <li>Siemens Skyra 3T & XA60 platform</li>
+            <li>GE Signa 1.5T systems</li>
+            <li>Protocol optimization</li>
+            <li>Advanced patient positioning & coil selection</li>
+            <li>Gating/triggering techniques</li>
+            <li>MRI safety compliance</li>
+            <li>Contrast-enhanced imaging</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-delay="100">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="8" width="36" height="28" rx="3" stroke="#FC809F" stroke-width="2.5"/><line x1="6" y1="20" x2="42" y2="20" stroke="#FC809F" stroke-width="2"/><line x1="18" y1="8" x2="18" y2="36" stroke="#FC809F" stroke-width="2"/><circle cx="12" cy="14" r="2" fill="#FC809F"/><circle cx="12" cy="28" r="2" fill="#FC809F"/><circle cx="30" cy="14" r="2" fill="#FC809F"/><rect x="22" y="25" width="12" height="7" rx="1" stroke="#FC809F" stroke-width="1.5"/></svg>
+          </div>
+          <h3>PACS & Imaging Informatics</h3>
+          <ul>
+            <li>PACS operations & exam QC</li>
+            <li>DICOM fundamentals & troubleshooting</li>
+            <li>Modality Worklist (MWL) awareness</li>
+            <li>RIS/EHR workflow integration</li>
+            <li>Image routing & study reconciliation</li>
+            <li>Radiologist communication & reporting</li>
+            <li>Downtime workflow support</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-delay="200">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="18" r="8" stroke="#FC809F" stroke-width="2.5"/><path d="M8 42c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="#FC809F" stroke-width="2.5" stroke-linecap="round"/><path d="M30 22l4 4-4 4" stroke="#FC809F" stroke-width="2" stroke-linecap="round"/><path d="M34 26h-8" stroke="#FC809F" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Leadership & Mentorship</h3>
+          <ul>
+            <li>Team training & structured onboarding</li>
+            <li>Clinical resource & informal team lead</li>
+            <li>Workflow optimization</li>
+            <li>Real-time problem-solving</li>
+            <li>Scheduling coordination</li>
+            <li>Inventory management & par levels</li>
+            <li>Interdisciplinary collaboration</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-delay="300">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="10" width="32" height="28" rx="3" stroke="#FC809F" stroke-width="2.5"/><line x1="8" y1="18" x2="40" y2="18" stroke="#FC809F" stroke-width="2"/><line x1="16" y1="10" x2="16" y2="18" stroke="#FC809F" stroke-width="2"/><line x1="32" y1="10" x2="32" y2="18" stroke="#FC809F" stroke-width="2"/><line x1="14" y1="26" x2="34" y2="26" stroke="#FC809F" stroke-width="1.5"/><line x1="14" y1="32" x2="28" y2="32" stroke="#FC809F" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Medical Records & Administration</h3>
+          <ul>
+            <li>Medical record coordination & retrieval</li>
+            <li>Data entry & documentation accuracy</li>
+            <li>QA & accreditation readiness</li>
+            <li>Healthcare documentation compliance</li>
+            <li>Claims & provider research</li>
+            <li>Release of information</li>
+            <li>Administrative workflow coordination</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-delay="400">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="3" stroke="#FC809F" stroke-width="2.5"/><path d="M14 24l6 6 14-14" stroke="#FC809F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Nuclear Medicine</h3>
+          <ul>
+            <li>Siemens & GE gamma cameras</li>
+            <li>Radioactive isotope preparation & administration</li>
+            <li>Hot lab operations & generator milking</li>
+            <li>Diagnostic scan production</li>
+            <li>Multi-system hospital experience</li>
+            <li>Cleveland Clinic, UPMC systems</li>
+            <li>Radiation safety protocols</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-delay="500">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="12" width="32" height="24" rx="2" stroke="#FC809F" stroke-width="2.5"/><path d="M16 12V8M32 12V8" stroke="#FC809F" stroke-width="2" stroke-linecap="round"/><line x1="8" y1="20" x2="40" y2="20" stroke="#FC809F" stroke-width="2"/><rect x="14" y="26" width="6" height="5" rx="1" stroke="#FC809F" stroke-width="1.5"/><rect x="28" y="26" width="6" height="5" rx="1" stroke="#FC809F" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Technology & Software</h3>
+          <ul>
+            <li>Siemens Syngo & XA60 platforms</li>
+            <li>Microsoft Excel reporting & tracking</li>
+            <li>Windows remote desktop tools</li>
+            <li>Basic SQL knowledge</li>
+            <li>Basic networking (TCP/IP, ports)</li>
+            <li>SOP creation & documentation</li>
+            <li>Ticket escalation & vendor coordination</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Certifications bar -->
+      <div class="certs-row">
+        <div class="cert-pill">
+          <span class="cert-icon">✦</span>
+          ARRT RT(MR) — MRI Certification (2020)
+        </div>
+        <div class="cert-pill">
+          <span class="cert-icon">✦</span>
+          CNMT — Nuclear Medicine Certification (2019)
+        </div>
+        <div class="cert-pill">
+          <span class="cert-icon">✦</span>
+          BLS — American Heart Association (2024)
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ─────────────────────────────────────────────────────── -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Where I've worked</span>
+        <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>MRI Technologist</h3>
+                <p class="timeline-company">Tidelands Health — Myrtle Beach, SC</p>
+              </div>
+              <span class="timeline-date">Aug 2021 – Present</span>
+            </div>
+            <ul>
+              <li>Perform high-quality MRI examinations on Siemens scanners with strict adherence to protocol and patient safety standards.</li>
+              <li>Serve as clinical resource and informal team lead, supporting real-time problem-solving in a high-volume imaging environment.</li>
+              <li>Lead and mentor newly hired MRI technologists through structured onboarding, safety education, and protocol training.</li>
+              <li>Manage PACS workflows ensuring accurate image documentation, timely study completion, and radiologist communication.</li>
+              <li>Coordinate patient and staff scheduling to optimize throughput and balance operational demands with patient-centered care.</li>
+              <li>Maintain detailed QA, preventive maintenance, and equipment calibration records to support accreditation readiness.</li>
+              <li>Manage inventory control and par levels for MRI consumables and departmental supplies.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>MRI Technologist</h3>
+                <p class="timeline-company">Magee Women's Hospital of UPMC — Pittsburgh, PA</p>
+              </div>
+              <span class="timeline-date">May 2019 – Jul 2021</span>
+            </div>
+            <ul>
+              <li>Performed diagnostic MRI examinations specializing in breast, breast biopsy, female pelvis, and MR defecography studies.</li>
+              <li>Applied advanced patient positioning techniques, coil selection, and gating/triggering methods to ensure diagnostic image quality.</li>
+              <li>Assisted with patient assessments including vital signs collection and IV placement for contrast-enhanced imaging.</li>
+              <li>Maintained strict compliance with hospital policies on patient safety, confidentiality, and infection control.</li>
+              <li>Provided patient education before and during examinations to reduce anxiety and improve cooperation.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>MRI Technologist Student</h3>
+                <p class="timeline-company">UPMC St. Margaret — Pittsburgh, PA</p>
+              </div>
+              <span class="timeline-date">Jan 2019 – Apr 2019</span>
+            </div>
+            <ul>
+              <li>Performed a variety of scans using Siemens and GE scanners, requiring independent judgment to produce quality diagnostic images.</li>
+              <li>Reviewed diagnostic image quality and filed images in appropriate patient records.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Nuclear Medicine Student</h3>
+                <p class="timeline-company">Cleveland Clinic, UPMC Shadyside, UPMC Presbyterian</p>
+              </div>
+              <span class="timeline-date">May 2018 – Dec 2018</span>
+            </div>
+            <ul>
+              <li>Worked across multiple hospital systems including Cleveland Clinic Main Campus and UPMC Shadyside.</li>
+              <li>Operated Siemens and GE gamma cameras for diagnostic nuclear medicine and cardiology imaging.</li>
+              <li>Prepared, administered, and measured radioactive isotopes for diagnostic scan production.</li>
+              <li>Completed hot lab rotation including generator milking and dose preparation.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ──────────────────────────────────────────────────────── -->
+  <section id="education" class="section education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Academic background</span>
+        <h2 class="section-title">Education & <span class="accent">Certifications</span></h2>
+      </div>
+      <div class="edu-grid">
+
+        <div class="edu-card">
+          <div class="edu-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 6L4 18l20 12 20-12L24 6z" stroke="#FC809F" stroke-width="2.5" stroke-linejoin="round"/><path d="M4 18v14" stroke="#FC809F" stroke-width="2.5" stroke-linecap="round"/><path d="M14 23.5V36c0 0 4 4 10 4s10-4 10-4V23.5" stroke="#FC809F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="edu-info">
+            <h3>Bachelor of Science</h3>
+            <p class="edu-sub">Nuclear Medicine Technology</p>
+            <p class="edu-org">Robert Morris University — Pittsburgh, PA</p>
+            <span class="edu-date">Fall 2015 – Spring 2019</span>
+          </div>
+        </div>
+
+        <div class="edu-card cert">
+          <div class="edu-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="20" r="12" stroke="#FC809F" stroke-width="2.5"/><path d="M16 32l-4 10 12-6 12 6-4-10" stroke="#FC809F" stroke-width="2.5" stroke-linejoin="round"/><path d="M21 20l2 2 4-4" stroke="#FC809F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="edu-info">
+            <h3>ARRT RT(MR)</h3>
+            <p class="edu-sub">Certificate in Magnetic Resonance Imaging</p>
+            <p class="edu-org">American Registry of Radiologic Technologists</p>
+            <span class="edu-date">2020</span>
+          </div>
+        </div>
+
+        <div class="edu-card cert">
+          <div class="edu-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="20" r="12" stroke="#FC809F" stroke-width="2.5"/><path d="M16 32l-4 10 12-6 12 6-4-10" stroke="#FC809F" stroke-width="2.5" stroke-linejoin="round"/><path d="M21 20l2 2 4-4" stroke="#FC809F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="edu-info">
+            <h3>CNMT</h3>
+            <p class="edu-sub">Certified Nuclear Medicine Technologist</p>
+            <p class="edu-org">Nuclear Medicine Technology Certification Board</p>
+            <span class="edu-date">2019</span>
+          </div>
+        </div>
+
+        <div class="edu-card cert">
+          <div class="edu-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 8v6M24 34v6M8 24h6M34 24h6" stroke="#FC809F" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="24" r="10" stroke="#FC809F" stroke-width="2.5"/><path d="M21 24l2 2 4-4" stroke="#FC809F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="edu-info">
+            <h3>BLS Certification</h3>
+            <p class="edu-sub">Basic Life Support</p>
+            <p class="edu-org">American Heart Association</p>
+            <span class="edu-date">2024</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────────────────────────────── -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Let's connect</span>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">I'm open to new opportunities in MRI technology, imaging informatics, PACS administration, and healthcare technology. Feel free to reach out.</p>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:caseyenos97@gmail.com" class="contact-value">caseyenos97@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Phone</p>
+              <a href="tel:4123269866" class="contact-value">412-326-9866</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Location</p>
+              <span class="contact-value">Myrtle Beach, SC</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="Jane" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" placeholder="Doe" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Job Opportunity / Collaboration" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <p class="form-note" id="form-note"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-name">Casey Enos</p>
+      <p class="footer-tagline">MRI Technologist & Imaging Professional</p>
+      <p class="footer-copy">&copy; 2026 Casey Enos. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
