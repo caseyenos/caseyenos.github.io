@@ -50,26 +50,20 @@ window.addEventListener('scroll', () => {
 const hamburger = document.getElementById('hamburger');
 const navList = document.querySelector('.nav-links');
 
+function closeMenu() {
+  navList.classList.remove('open');
+  hamburger.classList.remove('is-open');
+  hamburger.setAttribute('aria-expanded', false);
+}
+
 hamburger.addEventListener('click', () => {
   const isOpen = navList.classList.toggle('open');
+  hamburger.classList.toggle('is-open', isOpen);
   hamburger.setAttribute('aria-expanded', isOpen);
-  // Animate spans into X
-  const spans = hamburger.querySelectorAll('span');
-  if (isOpen) {
-    spans[0].style.cssText = 'transform:translateY(7px) rotate(45deg)';
-    spans[1].style.cssText = 'opacity:0';
-    spans[2].style.cssText = 'transform:translateY(-7px) rotate(-45deg)';
-  } else {
-    spans.forEach(s => s.style.cssText = '');
-  }
 });
 
 navList.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => {
-    navList.classList.remove('open');
-    hamburger.setAttribute('aria-expanded', false);
-    hamburger.querySelectorAll('span').forEach(s => s.style.cssText = '');
-  });
+  a.addEventListener('click', closeMenu);
 });
 
 // ── SKILL CARDS animate-in on scroll ─────────────────────────
