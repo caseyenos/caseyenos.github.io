@@ -246,7 +246,14 @@
       <div class="project-card">
         <div class="project-header">
           <div class="project-icon">
-            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="8" width="36" height="32" rx="3" stroke="#FC809F" stroke-width="2.5"/><line x1="6" y1="18" x2="42" y2="18" stroke="#FC809F" stroke-width="2"/><line x1="16" y1="8" x2="16" y2="18" stroke="#FC809F" stroke-width="2"/><line x1="32" y1="8" x2="32" y2="18" stroke="#FC809F" stroke-width="2"/><line x1="14" y1="27" x2="34" y2="27" stroke="#FC809F" stroke-width="1.5"/><line x1="14" y1="33" x2="26" y2="33" stroke="#FC809F" stroke-width="1.5"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="34" height="34" fill="none" style="display:block;flex-shrink:0;">
+              <rect x="6" y="8" width="36" height="32" rx="3" stroke="#FC809F" stroke-width="2.5"/>
+              <line x1="6"  y1="18" x2="42" y2="18" stroke="#FC809F" stroke-width="2"/>
+              <line x1="16" y1="8"  x2="16" y2="18" stroke="#FC809F" stroke-width="2"/>
+              <line x1="32" y1="8"  x2="32" y2="18" stroke="#FC809F" stroke-width="2"/>
+              <line x1="14" y1="27" x2="34" y2="27" stroke="#FC809F" stroke-width="1.5"/>
+              <line x1="14" y1="33" x2="26" y2="33" stroke="#FC809F" stroke-width="1.5"/>
+            </svg>
           </div>
           <div class="project-title-wrap">
             <h3>Patient Database System 2026</h3>
@@ -268,14 +275,48 @@
           Whether you're learning SQL joins, exploring healthcare data normalization, or preparing for a role in <strong>clinical data administration or PACS analytics</strong>, this dataset is designed to give you hands-on experience with the real structure of hospital data. Free to use, clone, and explore.
         </p>
 
-        <div class="project-stats">
-          <div class="project-stat"><strong>13</strong><span>Normalized Tables</span></div>
-          <div class="project-stat"><strong>1,000</strong><span>Patient Records</span></div>
-          <div class="project-stat"><strong>15,000+</strong><span>Total Rows</span></div>
-          <div class="project-stat"><strong>5</strong><span>Analytical Views</span></div>
-          <div class="project-stat"><strong>ICD-10</strong><span>Coded Diagnoses</span></div>
-          <div class="project-stat"><strong>Free</strong><span>Open Source</span></div>
-        </div>
+        <table class="project-features-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Detail</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feat-label">Normalized Tables</td>
+              <td class="feat-value">13 fully relational tables (3NF)</td>
+            </tr>
+            <tr>
+              <td class="feat-label">Patient Records</td>
+              <td class="feat-value">1,000 simulated patients with demographics, history & insurance</td>
+            </tr>
+            <tr>
+              <td class="feat-label">Total Dataset Rows</td>
+              <td class="feat-value">15,000+ rows across all tables</td>
+            </tr>
+            <tr>
+              <td class="feat-label">Analytical Views</td>
+              <td class="feat-value">5 prebuilt SQL views for common reporting queries</td>
+            </tr>
+            <tr>
+              <td class="feat-label">Diagnosis Coding</td>
+              <td class="feat-value">Real ICD-10-CM codes across 30 diagnosis categories</td>
+            </tr>
+            <tr>
+              <td class="feat-label">Stored Procedures</td>
+              <td class="feat-value">4 procedures — patient profiles, search, dept stats & reports</td>
+            </tr>
+            <tr>
+              <td class="feat-label">Database Engine</td>
+              <td class="feat-value">MySQL 8.0+ with triggers, foreign keys & generated columns</td>
+            </tr>
+            <tr>
+              <td class="feat-label">License</td>
+              <td class="feat-value">Free & open source — clone, study, and build on it</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
     </div>
