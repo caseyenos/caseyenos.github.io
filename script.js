@@ -83,7 +83,7 @@ function handleFormSubmit(e) {
   const message = document.getElementById('message').value.trim();
 
   const body = encodeURIComponent(
-    `From: ${fname} ${lname} <${email}>\n\n${message}`
+    `From: ${fname} ${lname} <${email}>\n\n${message}\n\n--\nkc.zip`
   );
   const mailtoLink =
     `mailto:caseyenos97@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
