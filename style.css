@@ -543,50 +543,55 @@ img { max-width: 100%; }
 }
 .project-blurb:last-of-type { margin-bottom: 32px; }
 
-.project-features-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
+.project-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
   margin-top: 28px;
-  font-size: 0.9rem;
+}
+
+.feat-box {
+  background: var(--c1);
   border-radius: var(--radius);
-  overflow: hidden;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid rgba(255,188,205,0.5);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.feat-box:hover {
+  transform: translateY(-3px);
   box-shadow: var(--shadow);
-  border: 1px solid rgba(255,188,205,0.4);
 }
-.project-features-table thead tr {
-  background: linear-gradient(135deg, var(--c4), var(--c5));
-}
-.project-features-table th {
-  padding: 14px 22px;
-  text-align: left;
-  font-size: 0.75rem;
+
+.feat-box-value {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--white);
-}
-.project-features-table th:first-child { width: 220px; }
-.project-features-table tbody tr {
-  background: var(--white);
-  border-bottom: 1px solid rgba(255,188,205,0.25);
-  transition: background var(--transition);
-}
-.project-features-table tbody tr:last-child td { border-bottom: none; }
-.project-features-table tbody tr:nth-child(even) { background: rgba(255,233,239,0.35); }
-.project-features-table tbody tr:hover { background: var(--c1); }
-.project-features-table td {
-  padding: 13px 22px;
-  vertical-align: middle;
-  line-height: 1.6;
-  border-bottom: 1px solid rgba(255,188,205,0.2);
-}
-.feat-label {
-  font-weight: 600;
   color: var(--c5);
-  white-space: nowrap;
+  line-height: 1;
 }
-.feat-value { color: var(--mid); }
+.feat-box-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--dark);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.feat-box-desc {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-top: 2px;
+}
+
+@media (max-width: 900px) {
+  .project-features-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) {
+  .project-features-grid { grid-template-columns: 1fr; }
+}
 
 @media (max-width: 600px) {
   .project-card { padding: 24px 20px; }
